@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/custom.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus fugit cumque aut, corrupti quos et, explicabo ullam dolore saepe quaerat unde sint quas accusantium maxime, provident id ad ipsum cupiditate dolorum? Laboriosam, labore repellendus neque dolores tenetur vero sed? Deserunt eius eveniet odio expedita praesentium adipisci, doloremque quos nulla error architecto ad temporibus tempore, alias nemo sed, magni consequuntur excepturi!</p>
-            </div>
-            <div id="novo" class="row">
 
-            </div>
-            <div class="row">
-                <button id="ok">ok</button>
-            </div>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="js/script.js" type="text/javascript"></script>
-    </body>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/cal.css">
+</head>
+
+<body>
+  
+  <!-- <h1>Atividades</h1> -->
+  
+  <div class="month">
+    <ul>
+      <li class="prev">&#10094;</li>
+      <li class="next">&#10095;</li>
+      <li class="month">
+        Julho<br>
+        <span style="font-size:18px">2021</span>
+      </li>
+    </ul>
+  </div>
+  
+  <ul class="weekdays">
+    <div>Seg</div>
+    <div>Ter</div>
+    <div>Qua</div>
+    <div>Qui</div>
+    <div>Sex</div>
+    <div>Sab</div>
+    <div>Dom</div>
+  </ul>
+  <div class="weeks">
+      <ul class="week">
+          <!-- 
+            <li><button>01</button><br><textarea class="textoEvol" cols="10" rows="3"></textarea></li>    
+            <li><button>31</button><br><textarea class="textoEvol" cols="10" rows="3" disabled></textarea></li>
+          -->
+      </ul>
+  </div>
+  
+  <script type="text/javascript" src="js/days.js"></script>
+</body>
+
 </html>
