@@ -136,7 +136,7 @@ div.textEq {
   padding:    8px;
 }
 .eqA {
-  background-color: #F4D5C0;
+  background-color: #FF9999; //#F4D5C0
 }
 
 .eqB {
@@ -152,7 +152,7 @@ div.textEq {
 }
 
 .eqE {
-  background-color: #FF9999;
+  background-color: #F4D5C0;
 }
 
 .atual {

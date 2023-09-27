@@ -69,7 +69,8 @@ function iniciaVars(){
   hoje = new Date();
   dataMes.setDate(15);
   dataMes.setHours(07,0,0,0);  
-  equipeData = {equipe: "Equipe A" , plantaoDia: new Date(2021,05,20,07)};    
+  // equipeData = {equipe: "Equipe A" , plantaoDia: new Date(2021,05,20,07)};    
+  equipeData = {equipe: "Equipe A" , plantaoDia: new Date(2023,09,27,07)};    
 }
 
 function imprimeCalendario(){
