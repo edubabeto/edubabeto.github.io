@@ -70,9 +70,8 @@ function iniciaVars(){
   hoje = new Date();
   dataMes.setDate(15);
   dataMes.setHours(07,0,0,0);  
-  equipeData = {equipe: "Equipe A" , plantaoDia: new Date(2021,05,20,07)};    
- 
-}
+  equipeData = {equipe: "Equipe A" , plantaoDia: new Date(2023,04,05,07)};  
+ }
 
 function imprimeCalendario(){
   var divWeeks, ul, div, dia, monthLi, contador;
@@ -244,7 +243,17 @@ function imprimeCalendario(){
 
   function showEq(equipeLetra) {
     var equipesInfo = [
-                {equipe:'A', 
+                 {equipe:'A', 
+                 delegado:{nome:'Alexandre Kennedy Ladeia Barbosa',masp:'387.321-3',email:'',telefone:''}, 
+                 coordenador:{nome:'Adriana Rocha Silva',masp:'458.268-0',email:'',telefone:''},
+                 supervisor:{nome:'José Cecílio Neto e Lopes',masp:'1.111.869-2',email:'',telefone:''},
+                 investigadores:[
+                  {nome:'Alex Vasconcelos Ferreira de Brito',masp:'1.111.637-3',email:'',telefone:''},  
+                  {nome:'Daniel da Costa Borges',masp:'1.112.912-9',email:'',telefone:''},  
+                  {nome:'Eduardo Terra Babeto',masp:'1.174.295-4',email:'',telefone:''},  
+                  {nome:'Gilberto Tome Borges',masp:'667.871-8',email:'',telefone:''} 
+                 ]},
+                 {equipe:'B', 
                  delegado:{nome:'João César Bicalho Costa Assis',masp:'1.330.574-3',email:'',telefone:''}, 
                  coordenador:{nome:'Ricardo Antônio Bicalho Ribeiro',masp:'950.577-7',email:'',telefone:''},
                  supervisor:{nome:'Marcos Vinícius Couto Santos',masp:'903.948-8',email:'',telefone:''},
@@ -254,7 +263,7 @@ function imprimeCalendario(){
                   {nome:'Paulo Gomes',masp:'1.242.845-4',email:'',telefone:''},  
                   {nome:'Sueli Eustáquia de Carvalho Simões',masp:'904.443-9',email:'',telefone:''}  
                  ]},
-                 {equipe:'B', 
+                 {equipe:'C', 
                  delegado:{nome:'Fernanda Aparecida Resende',masp:'667.967-4',email:'',telefone:''}, 
                  coordenador:{nome:'Nara Ivo Celestino',masp:'667.965-8',email:'',telefone:''},
                  supervisor:{nome:'Simeão Vieira Lopes',masp:'668.175-3',email:'',telefone:''},
@@ -264,7 +273,7 @@ function imprimeCalendario(){
                   {nome:'Priscila Corsino de Paula',masp:'1.255.912-6',email:'',telefone:''},  
                   {nome:'Edwilson de Souza Oliveira',masp:'1.257.077-6',email:'',telefone:''}  
                  ]},
-                 {equipe:'C', 
+                 {equipe:'D', 
                  delegado:{nome:'José Luiz Arantes Campolina',masp:'572.137-8',email:'',telefone:''}, 
                  coordenador:{nome:'João Flávio Rabelo Alves',masp:'547.440-8',email:'',telefone:''},
                  supervisor:{nome:'Jurandir Loiola dos Reis',masp:'370.202-4',email:'',telefone:''},
@@ -274,7 +283,7 @@ function imprimeCalendario(){
                   {nome:'Patrícia Tadeu de Oliveira',masp:'1.112.254-6',email:'',telefone:''},  
                   {nome:'Carlos Eduardo Vasconcelos Gomes',masp:'1.113.642-1',email:'',telefone:''}  
                  ]},
-                 {equipe:'D', 
+                 {equipe:'E', 
                  delegado:{nome:'Gilson Rodrigues Rosa',masp:'458.380-3',email:'',telefone:''}, 
                  coordenador:{nome:'Wenri Dorneli Gonçalves',masp:'458.205-2',email:'',telefone:''},
                  supervisor:{nome:'Lazaro Alexandre de Oliveira',masp:'667.975-7',email:'',telefone:''},
@@ -282,18 +291,8 @@ function imprimeCalendario(){
                   {nome:'Adriane Holfman da Silva Villeneuve',masp:'1.111.459-2',email:'',telefone:''},  
                   {nome:'Jonas Aquino Gomes',masp:'903.917-3',email:'',telefone:''},  
                   {nome:'Mário Lúcio Rodrigues da Silva',masp:'904.549-3',email:'',telefone:''}  
-                 ]},
-                 {equipe:'E', 
-                 delegado:{nome:'Alexandre Kennedy Ladeia Barbosa',masp:'387.321-3',email:'',telefone:''}, 
-                 coordenador:{nome:'Adriana Rocha Silva',masp:'458.268-0',email:'',telefone:''},
-                 supervisor:{nome:'José Cecílio Neto e Lopes',masp:'1.111.869-2',email:'',telefone:''},
-                 investigadores:[
-                  {nome:'Alex Vasconcelos Ferreira de Brito',masp:'1.111.637-3',email:'',telefone:''},  
-                  {nome:'Daniel da Costa Borges',masp:'1.112.912-9',email:'',telefone:''},  
-                  {nome:'Eduardo Terra Babeto',masp:'1.174.295-4',email:'',telefone:''},  
-                  {nome:'Gilberto Tome Borges',masp:'667.871-8',email:'',telefone:''}  
-                 ]}
-    ];
+                 ]}];                
+                 
     switch (equipeLetra) {
       case 'A':
         equipeSelect = equipesInfo[0];
