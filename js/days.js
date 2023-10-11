@@ -3,6 +3,8 @@ var plantaoMes, plantaoMesAnt;
 var equipeData, equipeSelect;
 var next = document.querySelector('li.next');
 var prev = document.querySelector('li.prev');
+var modal = document.querySelector('#myModal');
+var span = document.querySelector('#mySpan');
 const maxDias = 37;
 
 Date.prototype.initialDay = function(){
@@ -242,55 +244,52 @@ function imprimeCalendario(){
   }
 
   function showEq(equipeLetra) {
+    var p = document.querySelector('#pequipe');
     var equipesInfo = [
                  {equipe:'A', 
-                 delegado:{nome:'Alexandre Kennedy Ladeia Barbosa',masp:'387.321-3',email:'',telefone:''}, 
-                 coordenador:{nome:'Adriana Rocha Silva',masp:'458.268-0',email:'',telefone:''},
-                 supervisor:{nome:'José Cecílio Neto e Lopes',masp:'1.111.869-2',email:'',telefone:''},
+                 delegado:{nome:'Edilaine Márcia Antunes ',masp:'668.134',email:'',telefone:''}, 
+                 coordenador:{nome:'Adriana Rocha Silva',masp:'458.268',email:'',telefone:''},
+                 supervisor:{nome:'Adler Michael Felipe Rosa',masp:'1.113.161',email:'',telefone:''},
                  investigadores:[
-                  {nome:'Alex Vasconcelos Ferreira de Brito',masp:'1.111.637-3',email:'',telefone:''},  
-                  {nome:'Daniel da Costa Borges',masp:'1.112.912-9',email:'',telefone:''},  
-                  {nome:'Eduardo Terra Babeto',masp:'1.174.295-4',email:'',telefone:''},  
-                  {nome:'Gilberto Tome Borges',masp:'667.871-8',email:'',telefone:''} 
+                  {nome:'José Cecílio Neto e Lopes',masp:'1.111.869',email:'',telefone:''},  
+                  {nome:'Daniel da Costa Borges',masp:'1.112.912',email:'',telefone:''},  
+                  {nome:'Eduardo Terra Babeto',masp:'1.174.295',email:'',telefone:''}  
                  ]},
                  {equipe:'B', 
-                 delegado:{nome:'João César Bicalho Costa Assis',masp:'1.330.574-3',email:'',telefone:''}, 
-                 coordenador:{nome:'Ricardo Antônio Bicalho Ribeiro',masp:'950.577-7',email:'',telefone:''},
-                 supervisor:{nome:'Marcos Vinícius Couto Santos',masp:'903.948-8',email:'',telefone:''},
+                 delegado:{nome:'Alfeu Egídio Gomes Da Silva',masp:'1.237.220',email:'',telefone:''}, 
+                 coordenador:{nome:'Ricardo Antônio Bicalho Ribeiro',masp:'950.577',email:'',telefone:''},
+                 supervisor:{nome:'Marcos Vinícius Couto Santos',masp:'903.948',email:'',telefone:''},
                  investigadores:[
-                  {nome:'Leonardo Apolinário Dutra Oliveira',masp:'1.174.262-4',email:'',telefone:''},  
-                  {nome:'Fernando Oliveira Carneiro',masp:'1.242.129-3',email:'',telefone:''},  
-                  {nome:'Paulo Gomes',masp:'1.242.845-4',email:'',telefone:''},  
-                  {nome:'Sueli Eustáquia de Carvalho Simões',masp:'904.443-9',email:'',telefone:''}  
+                  {nome:'Romero De Mello Teixeira',masp:'458.155',email:'',telefone:''},  
+                  {nome:'Fernando Oliveira Carneiro',masp:'1.242.129',email:'',telefone:''},  
+                  {nome:'Paulo Gomes',masp:'1.242.845',email:'',telefone:''}  
                  ]},
                  {equipe:'C', 
-                 delegado:{nome:'Fernanda Aparecida Resende',masp:'667.967-4',email:'',telefone:''}, 
-                 coordenador:{nome:'Nara Ivo Celestino',masp:'667.965-8',email:'',telefone:''},
-                 supervisor:{nome:'Simeão Vieira Lopes',masp:'668.175-3',email:'',telefone:''},
+                 delegado:{nome:'Rodrigo Cesar Soares',masp:'1.188.692',email:'',telefone:''}, 
+                 coordenador:{nome:'Nara Ivo Celestino',masp:'667.965',email:'',telefone:''},
+                 supervisor:{nome:'Sílvio Américo Bicalho Piacenza',masp:'1.112.022',email:'',telefone:''},
                  investigadores:[
-                  {nome:'Cláudia Piedade Guimarães',masp:'546.876-4',email:'',telefone:''},  
-                  {nome:'Sílvio Américo Bicalho Piacenza',masp:'1.112.022-7',email:'',telefone:''},  
-                  {nome:'Priscila Corsino de Paula',masp:'1.255.912-6',email:'',telefone:''},  
-                  {nome:'Edwilson de Souza Oliveira',masp:'1.257.077-6',email:'',telefone:''}  
+                  {nome:'Cláudia Piedade Guimarães',masp:'546.876',email:'',telefone:''},  
+                  {nome:'Simeão Vieira Lopes',masp:'668.175',email:'',telefone:''},  
+                  {nome:'Edwilson de Souza Oliveira',masp:'1.257.077',email:'',telefone:''}  
                  ]},
                  {equipe:'D', 
-                 delegado:{nome:'José Luiz Arantes Campolina',masp:'572.137-8',email:'',telefone:''}, 
-                 coordenador:{nome:'João Flávio Rabelo Alves',masp:'547.440-8',email:'',telefone:''},
-                 supervisor:{nome:'Jurandir Loiola dos Reis',masp:'370.202-4',email:'',telefone:''},
+                 delegado:{nome:'Marco Antônio Lage Pena',masp:'1.188.589',email:'',telefone:''}, 
+                 coordenador:{nome:'João Flávio Rabelo Alves',masp:'547.440',email:'',telefone:''},
+                 supervisor:{nome:'Paulo Roberto Alves',masp:'388.222',email:'',telefone:''},
                  investigadores:[
-                  {nome:'Paulo Roberto Alves',masp:'388.222-2',email:'',telefone:''},  
-                  {nome:'Welinton Vieira Rocha',masp:'667.873-4',email:'',telefone:''},  
-                  {nome:'Patrícia Tadeu de Oliveira',masp:'1.112.254-6',email:'',telefone:''},  
-                  {nome:'Carlos Eduardo Vasconcelos Gomes',masp:'1.113.642-1',email:'',telefone:''}  
+                  {nome:'Welinton Vieira Rocha',masp:'667.873',email:'',telefone:''},  
+                  {nome:'Carlos Eduardo Vasconcelos Gomes',masp:'1.113.642',email:'',telefone:''},  
+                  {nome:'Priscila Corsino de Paula',masp:'1.255.912',email:'',telefone:''} 
                  ]},
                  {equipe:'E', 
-                 delegado:{nome:'Gilson Rodrigues Rosa',masp:'458.380-3',email:'',telefone:''}, 
-                 coordenador:{nome:'Wenri Dorneli Gonçalves',masp:'458.205-2',email:'',telefone:''},
-                 supervisor:{nome:'Lazaro Alexandre de Oliveira',masp:'667.975-7',email:'',telefone:''},
+                 delegado:{nome:'Fernanda Aparecida Resende',masp:'667.967',email:'',telefone:''}, 
+                 coordenador:{nome:'Wenri Dorneli Gonçalves',masp:'458.205',email:'',telefone:''},
+                 supervisor:{nome:'Lazaro Alexandre de Oliveira',masp:'667.975',email:'',telefone:''},
                  investigadores:[
-                  {nome:'Adriane Holfman da Silva Villeneuve',masp:'1.111.459-2',email:'',telefone:''},  
-                  {nome:'Jonas Aquino Gomes',masp:'903.917-3',email:'',telefone:''},  
-                  {nome:'Mário Lúcio Rodrigues da Silva',masp:'904.549-3',email:'',telefone:''}  
+                  {nome:'Adriane Holfman da Silva Villeneuve',masp:'1.111.459',email:'',telefone:''},  
+                  {nome:'Jonas Aquino Gomes',masp:'903.917',email:'',telefone:''},  
+                  {nome:'Mário Lúcio Rodrigues da Silva',masp:'904.549',email:'',telefone:''}  
                  ]}];                
                  
     switch (equipeLetra) {
@@ -310,13 +309,41 @@ function imprimeCalendario(){
         equipeSelect = equipesInfo[4];
         break;
     }
-    alert(JSON.stringify(equipeSelect));
+    // alert(JSON.stringify(equipeSelect));
+    var t = "<b>Equipe: " + equipeSelect.equipe +"</b><br><br><hr class='heq'>";
+    t +="<b>Coordenação:</b><br>";
+    t +="Delegado.....: " + equipeSelect.delegado.nome +" masp: "+equipeSelect.delegado.masp+"<br>";
+    t +="Coordenador: " +equipeSelect.coordenador.nome +" masp: "+equipeSelect.coordenador.masp+"<br>";
+    t +="Supervisor...: " +equipeSelect.supervisor.nome +" masp: "+equipeSelect.supervisor.masp+"<br>";
+    t += "<hr class='heq'><b>Despacho</b><br>";
+    for (i=0;i < equipeSelect.investigadores.length;i++){
+      t +="Investigador: " +equipeSelect.investigadores[i].nome +" masp: "+equipeSelect.investigadores[i].masp+"<br>";
+    }
+    
+
+    modal.style.display = "block";
+    p.innerHTML = t;
   }
+
+  // Modal Events
+  span.addEventListener('click',function(){
+    modal.style.display = "none";
+  });
+  window.addEventListener('click',function(event){
+    if (event.target===modal){
+      modal.style.display="none";
+    }
+  });
+  // modal events end
+
+
+
 
   prev.addEventListener('click',function(){
     dataMes.setMonth(dataMes.getMonth()-1);
     calculaPlantao();
     imprimeCalendario();
+    showEquipe();
     console.log(dataMes);
   });
 
@@ -324,6 +351,7 @@ function imprimeCalendario(){
     dataMes.setMonth(dataMes.getMonth()+1);
     calculaPlantao();
     imprimeCalendario();
+    showEquipe();
     console.log(dataMes);
     
   });
