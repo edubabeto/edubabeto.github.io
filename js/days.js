@@ -247,11 +247,11 @@ function imprimeCalendario(){
     var p = document.querySelector('#pequipe');
     var equipesInfo = [
                  {equipe:'A', 
-                 delegado:{nome:'Edilaine Márcia Antunes ',masp:'668.134',email:'',telefone:''}, 
-                 coordenador:{nome:'Adriana Rocha Silva',masp:'458.268',email:'',telefone:''},
-                 supervisor:{nome:'Adler Michael Felipe Rosa',masp:'1.113.161',email:'',telefone:''},
+                 delegado:{nome:'Fernanda Aparecida Resende',masp:'667.967',email:'',telefone:''}, 
+                 coordenador:{nome:'Lazaro Alexandre de Oliveira',masp:'667.975',email:'',telefone:''},
+                 supervisor:{nome:'Adriane Holfman da Silva Villeneuve',masp:'1.111.459',email:'',telefone:''},
                  investigadores:[
-                  {nome:'José Cecílio Neto e Lopes',masp:'1.111.869',email:'',telefone:''},  
+                  {nome:'Romero De Mello Teixeira',masp:'458.155',email:'',telefone:''},  
                   {nome:'Daniel da Costa Borges',masp:'1.112.912',email:'',telefone:''},  
                   {nome:'Eduardo Terra Babeto',masp:'1.174.295',email:'',telefone:''}  
                  ]},
@@ -260,7 +260,6 @@ function imprimeCalendario(){
                  coordenador:{nome:'Ricardo Antônio Bicalho Ribeiro',masp:'950.577',email:'',telefone:''},
                  supervisor:{nome:'Marcos Vinícius Couto Santos',masp:'903.948',email:'',telefone:''},
                  investigadores:[
-                  {nome:'Romero De Mello Teixeira',masp:'458.155',email:'',telefone:''},  
                   {nome:'Fernando Oliveira Carneiro',masp:'1.242.129',email:'',telefone:''},  
                   {nome:'Paulo Gomes',masp:'1.242.845',email:'',telefone:''}  
                  ]},
@@ -269,9 +268,9 @@ function imprimeCalendario(){
                  coordenador:{nome:'Nara Ivo Celestino',masp:'667.965',email:'',telefone:''},
                  supervisor:{nome:'Sílvio Américo Bicalho Piacenza',masp:'1.112.022',email:'',telefone:''},
                  investigadores:[
-                  {nome:'Cláudia Piedade Guimarães',masp:'546.876',email:'',telefone:''},  
-                  {nome:'Simeão Vieira Lopes',masp:'668.175',email:'',telefone:''},  
-                  {nome:'Edwilson de Souza Oliveira',masp:'1.257.077',email:'',telefone:''}  
+                   {nome:'Simeão Vieira Lopes',masp:'668.175',email:'',telefone:''},  
+                   {nome:'Edwilson de Souza Oliveira',masp:'1.257.077',email:'',telefone:''},  
+                   {nome:'Jonas Aquino Gomes',masp:'903.917',email:'',telefone:''}  
                  ]},
                  {equipe:'D', 
                  delegado:{nome:'Marco Antônio Lage Pena',masp:'1.188.589',email:'',telefone:''}, 
@@ -283,12 +282,12 @@ function imprimeCalendario(){
                   {nome:'Priscila Corsino de Paula',masp:'1.255.912',email:'',telefone:''} 
                  ]},
                  {equipe:'E', 
-                 delegado:{nome:'Fernanda Aparecida Resende',masp:'667.967',email:'',telefone:''}, 
-                 coordenador:{nome:'Wenri Dorneli Gonçalves',masp:'458.205',email:'',telefone:''},
-                 supervisor:{nome:'Lazaro Alexandre de Oliveira',masp:'667.975',email:'',telefone:''},
+                 delegado:{nome:'Edilaine Márcia Antunes ',masp:'668.134',email:'',telefone:''}, 
+                 coordenador:{nome:'Adriana Rocha Silva',masp:'458.268',email:'',telefone:''},
+                 supervisor:{nome:'Rogério Mantovani',masp:'381.178',email:'',telefone:''},
                  investigadores:[
-                  {nome:'Adriane Holfman da Silva Villeneuve',masp:'1.111.459',email:'',telefone:''},  
-                  {nome:'Jonas Aquino Gomes',masp:'903.917',email:'',telefone:''},  
+                  {nome:'Wenri Donelli Gonçalves',masp:'458.205',email:'',telefone:''},  
+                  {nome:'João Pedro Ferreira Fernandes de Oliveira',masp:'1.412.048',email:'',telefone:''},  
                   {nome:'Mário Lúcio Rodrigues da Silva',masp:'904.549',email:'',telefone:''}  
                  ]}];                
                  
