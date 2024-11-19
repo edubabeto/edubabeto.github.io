@@ -269,8 +269,8 @@ function imprimeCalendario(){
                     coordenador:{nome:'Nara Ivo Celestino',masp:'667.965',email:'',telefone:''},
                     supervisor:{nome:'Edwilson de Souza Oliveira',masp:'1.257.077',email:'',telefone:''},
                     investigadores:[
-                      {nome:'Renan Henrique de Paula',masp:'1.174.327',email:'',telefone:''}, 
-                      {nome:'Priscila Corsino de Paula',masp:'1.255.912',email:'',telefone:''} 
+                      {nome:'Carlos Eduardo Vasconcelos Gomes',masp:'1.113.642',email:'',telefone:''},  
+                      {nome:'Renan Henrique de Paula',masp:'1.174.327',email:'',telefone:''} 
                     ]},
                     {equipe:'D', 
                       delegado:{nome:'Marco Antônio Lage Pena',masp:'1.188.589',email:'',telefone:''}, 
@@ -278,7 +278,7 @@ function imprimeCalendario(){
                       supervisor:{nome:'Paulo Roberto Alves',masp:'388.222',email:'',telefone:''},
                       investigadores:[
                         {nome:'Welinton Vieira Rocha',masp:'667.873',email:'',telefone:''},  
-                        {nome:'Carlos Eduardo Vasconcelos Gomes',masp:'1.113.642',email:'',telefone:''},  
+                        {nome:'Priscila Corsino de Paula',masp:'1.255.912',email:'',telefone:''}, 
                         {nome:'Danielly Cristina Barbosa da Silva',masp:'1.460.569',email:'',telefone:''}  
                       ]},
                       {equipe:'E', 
