@@ -251,7 +251,6 @@ function imprimeCalendario(){
         coordenador:{nome:'Lazaro Alexandre de Oliveira',masp:'667.975',email:'',telefone:''},
         supervisor:{nome:'Adriane Holfman da Silva Villeneuve',masp:'1.111.459',email:'',telefone:''},
         investigadores:[
-                  {nome:'Romero De Mello Teixeira',masp:'458.155',email:'',telefone:''},  
                   {nome:'Rafael de Oliveira Perdigão',masp:'1.255.953',email:'',telefone:''},  
                   {nome:'João Pedro Ferreira Fernandes de Oliveira',masp:'1.412.048',email:'',telefone:''}
                 ]},
@@ -266,10 +265,11 @@ function imprimeCalendario(){
                   ]},
                   {equipe:'C', 
                     delegado:{nome:'Rodrigo Cesar Soares',masp:'1.188.692',email:'',telefone:''}, 
-                    coordenador:{nome:'Nara Ivo Celestino',masp:'667.965',email:'',telefone:''},
+                    coordenador:{nome:'Romero De Mello Teixeira',masp:'458.155',email:'',telefone:''},
                     supervisor:{nome:'Edwilson de Souza Oliveira',masp:'1.257.077',email:'',telefone:''},
                     investigadores:[
                       {nome:'Carlos Eduardo Vasconcelos Gomes',masp:'1.113.642',email:'',telefone:''},  
+                      {nome:'Fabrício Alves Mendes',masp:'1.113.072',email:'',telefone:''},  
                       {nome:'Renan Henrique de Paula',masp:'1.174.327',email:'',telefone:''} 
                     ]},
                     {equipe:'D', 
