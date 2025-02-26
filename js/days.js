@@ -251,6 +251,7 @@ function imprimeCalendario(){
         coordenador:{nome:'Lazaro Alexandre de Oliveira',masp:'667.975',email:'',telefone:''},
         supervisor:{nome:'Adriane Holfman da Silva Villeneuve',masp:'1.111.459',email:'',telefone:''},
         investigadores:[
+                  {nome:'Vânia Aparecida de Oliveira',masp:'458.178',email:'',telefone:''},  
                   {nome:'Rafael de Oliveira Perdigão',masp:'1.255.953',email:'',telefone:''},  
                   {nome:'João Pedro Ferreira Fernandes de Oliveira',masp:'1.412.048',email:'',telefone:''}
                 ]},
