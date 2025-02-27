@@ -99,7 +99,12 @@ function imprimeCalendario(){
         dia = i;
       }
       if ((dia == hoje.getDate()) && (dataMes.getMonth() == hoje.getMonth())) {
-        classBtn="btn-date atual";
+        if ((i < 9) && (dia > 24)) {
+          classBtn="btn-date";
+        }
+        else {
+          classBtn="btn-date atual";
+        }
       }
       else {
         classBtn="btn-date";
